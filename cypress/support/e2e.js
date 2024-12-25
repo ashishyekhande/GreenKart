@@ -19,3 +19,8 @@ import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 import 'cypress-mochawesome-reporter/register';
+
+beforeEach("This will execute before each test",function(){
+    cy.intercept({ resourceType: /xhr|fetch/ }, { log: false })
+
+})
