@@ -1,10 +1,6 @@
 /// <reference types="cypress" />
 
-
-
 describe("Testing basics" ,function(){
-
-    
 
 it("testing domains " , function (){
 

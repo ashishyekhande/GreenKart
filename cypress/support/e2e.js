@@ -24,3 +24,5 @@ beforeEach("This will execute before each test",function(){
     cy.intercept({ resourceType: /xhr|fetch/ }, { log: false })
 
 })
+
+/// <reference types="cypress" />
