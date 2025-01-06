@@ -28,6 +28,7 @@ class basketPage extends homepage {
         cy.get('select').select('India')
         cy.get(this.ele_checkbox).click()
         cy.get(this.ele_button).contains('Proceed').click()
+       
     }
 
 }
