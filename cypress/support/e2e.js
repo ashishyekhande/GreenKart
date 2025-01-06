@@ -22,7 +22,7 @@ import 'cypress-mochawesome-reporter/register';
 
 beforeEach("This will execute before each test",function(){
     cy.intercept({ resourceType: /xhr|fetch/ }, { log: false })
-
+    cy.fixture('date').as('data');
 })
 
 /// <reference types="cypress" />
